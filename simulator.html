@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #e3f2fd;">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" style="background-color: #e3f2fd;">
         <div class="container-fluid">
             <a class="navbar-brand" href="./index.html">
                 <img src="./images/logoSimples.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
@@ -57,16 +57,12 @@
             <div class="row justify-content-center">
 
 
-                <div class="col-6" style="background-color: #e3f2fd;">
+                <div class="col-6 shadow p-4" style="background-color: #e3f2fd;">
                     <h1> Simulador de Poupança Energética</h1>
                     <br>
                     <div class="mb-3">
-                        <label for="areaForm" class="form-label">Insira a área em m2 de cada janela:</label>
+                        <label for="areaForm" class="form-label">Insira a área envidraçada em m2:</label>
                         <input type="number" class="form-control" id="areaForm" placeholder="0">
-                    </div>
-                    <div class="mb-3">
-                        <label for="numberForm" class="form-label">Insira o número de janelas:</label>
-                        <input type="number" class="form-control" id="numberForm" placeholder="0">
                     </div>
                     <button type="button" class="btn btn-primary" onclick="gerarValores()">Submeter</button>
 
@@ -75,7 +71,7 @@
                         <p>Custo do vidro: <span id="cost">0</span> €</p>
                         <p>Potência gerada por mês: <span id="powerMonth">0</span> kWh/dia.m2</p>
                         <p>Potência gerada por ano: <span id="powerYear">0</span> kWh/dia.m2</p>
-                        <p>Poupança ao fim de 1 anos: <span id="save1">0</span> €</p>
+                        <p>Poupança ao fim de 1 ano: <span id="save1">0</span> €</p>
                         <p>Poupança ao fim de 10 anos: <span id="save10">0</span> €</p>
                     </div>
                 </div>
@@ -108,9 +104,7 @@
         function gerarValores() {
             var area = Number(document.getElementById("areaForm").value);
 
-            var number = Number(document.getElementById("numberForm").value);
-
-            var totalArea = number * area;
+            var totalArea = area;
 
             var installationCost = totalArea * costPerM2;
 
