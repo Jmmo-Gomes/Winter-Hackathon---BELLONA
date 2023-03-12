@@ -2,105 +2,138 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Volight Glass | Simulador</title>
-  <link rel="shortcut icon" href="./images/logoSimples.ico" type="image/x-icon">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volight Glass | Simulador</title>
+    <link rel="shortcut icon" href="./images/logoSimples.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #e3f2fd;">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="./index.html">
-        <img src="./images/logoSimples.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
-        <span style="color: #15403B;">Volight Glass</span>
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #e3f2fd;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">
+                <img src="./images/logoSimples.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                <span style="color: #15403B;">Volight Glass</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Produtos
             </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="./glass.html">Vidro</a></li>
-              <li><a class="dropdown-item" href="./simulator.html">Simulador</a></li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="./glass.html">Vidro</a></li>
+                            <li><a class="dropdown-item" href="./simulator.html">Simulador</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Sobre nós
             </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="./empresa.html">A empresa</a></li>
-              <li><a class="dropdown-item" href="./equipa.html">A equipa</a></li>
-            </ul>
-          </li>
-        </ul>
-        <a class="btn" style="background-color: #15403B; color: white;" href="./contacts.html" tabindex="-1" aria-disabled="true">Contacte-nos</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="./empresa.html">A empresa</a></li>
+                            <li><a class="dropdown-item" href="./equipa.html">A equipa</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <a class="btn" style="background-color: #15403B; color: white;" href="./contacts.html" tabindex="-1" aria-disabled="true">Contacte-nos</a>
 
-      </div>
-    </div>
-  </nav>
-
-  <main class="" style="padding-top: 56px;">
-
-    <div class="container my-5">
-      <div class="row justify-content-center">
-        <div class="col-6" style="background-color: #e3f2fd;">
-          <div class="mb-3">
-            <label for="formGroupExampleInput" class="form-label">Insira a área envidraçada em metros quadrados:</label>
-            <input type="number" class="form-control" id="formGroupExampleInput" placeholder="0">
-          </div>
-          <button type="button" class="btn btn-primary" onclick="gerarValores()">Submeter</button>
-          <div class="mb-3">
-            <p>Custo do vidro: <span id="1"></span></p>
-            <p>Potência gerada por mês: <span id="2"></span></p>
-            <p>Potência gerada por ano: <span id="3"></span></p>
-            <p>Poupança ao fim de 1 anos: <span id="4"></span></p>
-            <p>Poupança ao fim de 10 anos: <span id="5"></span></p>
-          </div>
+            </div>
         </div>
-      </div>
-    </div>
+    </nav>
+
+    <main class="" style="padding-top: 56px;">
+
+        <div class="container my-5">
+            <div class="row justify-content-center">
+                <div class="col-6" style="background-color: #e3f2fd;">
+                    <div class="mb-3">
+                        <label for="areaForm" class="form-label">Insira a área em m2 de cada janela:</label>
+                        <input type="number" class="form-control" id="areaForm" placeholder="0">
+                    </div>
+                    <div class="mb-3">
+                        <label for="numberForm" class="form-label">Insira o número de janelas:</label>
+                        <input type="number" class="form-control" id="numberForm" placeholder="0">
+                    </div>
+                    <button type="button" class="btn btn-primary" onclick="gerarValores()">Submeter</button>
+                    <div class="mb-3">
+                        <p>Custo do vidro: <span id="cost">0</span> €</p>
+                        <p>Potência gerada por mês: <span id="powerMonth">0</span> kWh/dia.m2</p>
+                        <p>Potência gerada por ano: <span id="powerYear">0</span> kWh/dia.m2</p>
+                        <p>Poupança ao fim de 1 anos: <span id="save1">0</span> €</p>
+                        <p>Poupança ao fim de 10 anos: <span id="save10">0</span> €</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
 
-  </main>
+    </main>
 
-  <footer class="text-center" style="background-color: #e3f2fd;">
-    <p class="mb-0">&#169; Copyright Volight Glass. Todos os direitos reservados.</p>
-  </footer>
+    <footer class="text-center" style="background-color: #e3f2fd;">
+        <p class="mb-0">&#169; Copyright Volight Glass. Todos os direitos reservados.</p>
+    </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous">
-  </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
 
-  <script>
-    const volt = 30;
-    const horasDeSol = 6.85;
+    <script>
+        const voltPerM2 = 30;
+        const sunHours = 6.85;
+        const months = 12;
+        const years = 10;
+        const costPerM2 = 400;
+        const consumption = 114;
+        const energyCost = 0.213;
+        const cost = consumption * energyCost;
+        const power = sunHours * voltPerM2;
 
-    var metroQuadrados = document.getElementById("formGroupExampleInput").value;
-    console.log(metroQuadrados)
 
-    function gerarValores() {
-      var metroQuadrados = document.getElementById("formGroupExampleInput").value;
-      console.log(metroQuadrados)
-      outDois = Number(metroQuadrados)  * volt;
-      console.log(outDois)
-      document.getElementById("1").innerHTML = outDois;
-    }
-  </script>
+        function gerarValores() {
+            var area = Number(document.getElementById("areaForm").value);
+
+            var number = Number(document.getElementById("numberForm").value);
+
+            var totalArea = number * area;
+
+            var installationCost = totalArea * costPerM2;
+
+            document.getElementById("cost").innerHTML = installationCost;
+
+            var powerMonth = power * totalArea;
+
+            var powerYear = powerMonth * months;
+
+            var powerTenYear = powerYear * years;
+
+            console.log(powerMonth);
+
+            console.log(powerYear);
+
+            document.getElementById("powerMonth").innerHTML = powerMonth;
+
+            document.getElementById("powerYear").innerHTML = powerYear;
+
+            var totalOneYearConsumption = cost * totalArea * months;
+
+            var savingsOneYear = totalOneYearConsumption - (totalOneYearConsumption - powerYear);
+
+            document.getElementById("save1").innerHTML = savingsOneYear;
+
+            var totalTenYearConsumption = totalOneYearConsumption * years;
+
+            var savingsTenYears = totalTenYearConsumption - (totalTenYearConsumption - powerTenYear);
+
+            document.getElementById("save10").innerHTML = savingsTenYears;
+        }
+    </script>
 </body>
 
 </html>
